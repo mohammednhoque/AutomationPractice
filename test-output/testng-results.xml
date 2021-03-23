@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-23T04:52:39 EDT" name="Default suite" finished-at="2021-03-23T04:52:52 EDT" duration-ms="13190">
+  <suite started-at="2021-03-23T14:27:31 EDT" name="Default suite" finished-at="2021-03-23T14:27:43 EDT" duration-ms="12340">
     <groups>
     </groups>
-    <test started-at="2021-03-23T04:52:39 EDT" name="Default test" finished-at="2021-03-23T04:52:52 EDT" duration-ms="13190">
-      <class name="selenium.automationpractice.TestAutomationpractice">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:selenium.automationpractice.TestAutomationpractice@318ba8c8]" started-at="2021-03-23T04:52:39 EDT" name="launchBrowser" finished-at="2021-03-23T04:52:40 EDT" duration-ms="1462" status="PASS">
+    <test started-at="2021-03-23T14:27:31 EDT" name="Default test" finished-at="2021-03-23T14:27:43 EDT" duration-ms="12340">
+      <class name="selenium.automationpractice.Test_ShopDresses">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:selenium.automationpractice.Test_ShopDresses@318ba8c8]" started-at="2021-03-23T14:27:31 EDT" name="launchBrowser" finished-at="2021-03-23T14:27:32 EDT" duration-ms="1508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="testAutomationPractice()[pri:0, instance:selenium.automationpractice.TestAutomationpractice@318ba8c8]" started-at="2021-03-23T04:52:40 EDT" name="testAutomationPractice" finished-at="2021-03-23T04:52:51 EDT" duration-ms="11033" status="PASS">
+        <test-method signature="test()[pri:0, instance:selenium.automationpractice.Test_ShopDresses@318ba8c8]" started-at="2021-03-23T14:27:32 EDT" name="test" finished-at="2021-03-23T14:27:42 EDT" duration-ms="10131" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAutomationPractice -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.automationpractice.TestAutomationpractice@318ba8c8]" started-at="2021-03-23T04:52:51 EDT" name="tearDown" finished-at="2021-03-23T04:52:52 EDT" duration-ms="667" status="PASS">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.automationpractice.Test_ShopDresses@318ba8c8]" started-at="2021-03-23T14:27:42 EDT" name="tearDown" finished-at="2021-03-23T14:27:43 EDT" duration-ms="668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- selenium.automationpractice.TestAutomationpractice -->
+      </class> <!-- selenium.automationpractice.Test_ShopDresses -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

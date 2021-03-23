@@ -89,7 +89,7 @@
 					<reuseForks>true</reuseForks>
 					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>C:\Users\moham\git\AutomationPractice_website_automation\testng.xml</suiteXmlFile>
+						<suiteXmlFile>C:\Users\moham\git\Automationrepository\Automationpractice\testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 				
