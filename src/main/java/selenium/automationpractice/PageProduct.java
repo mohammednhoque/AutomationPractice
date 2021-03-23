@@ -11,4 +11,6 @@ public class PageProduct extends PageMenu {
 	@FindBy(xpath = "//img[@title='Printed Dress']")
 	WebElement img_printed_dress;
 
+//	@FindBy(xpath = )
+//	WebElement 
 }

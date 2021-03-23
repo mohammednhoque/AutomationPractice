@@ -34,7 +34,6 @@ public abstract class PageMenu {
 	public PageProduct clickHoverEveningDresses(WebDriver driver) {
 		Actions action = new Actions(driver);
 		action.moveToElement(btn_women).build().perform();
-		;
 		action.moveToElement(link_hover_evening_dresses).build().perform();
 		link_hover_evening_dresses.click();
 		return PageFactory.initElements(driver, PageProduct.class);

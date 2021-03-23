@@ -1,25 +1,31 @@
 package selenium.automationpractice;
 
 import static org.junit.Assert.*;
+
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
-import org.junit.*;
+
+import org.junit.After;
+import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.*;
+
 
 public class TestAutomationpractice {
 	
 	WebDriver driver;
 
-	@Before
+	@BeforeMethod
 	public void launchBrowser() {
 		driver = TechnicalTools.chooseBrowser(EBrowsers.Chrome);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	@After
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
@@ -30,7 +36,11 @@ public class TestAutomationpractice {
 		driver.findElement(By.xpath("//*[contains(@title, 'Log in')]")).click();
 		assertEquals("AUTHENTICATION", driver.findElement(By.xpath("//h1")).getText());
 		
-		driver.findElement(By.id("email_create")).sendKeys("test@shopping.com");
+		Random ranNum = new Random();
+		int rn = ranNum.nextInt(1000);
+	
+		
+		driver.findElement(By.id("email_create")).sendKeys("test"+rn+"@shopping.com");
 		driver.findElement(By.id("SubmitCreate")).click();
 		assertEquals("YOUR PERSONAL INFORMATION", driver.findElement(By.xpath("//*[@id=\"account-creation_form\"]/div[1]/h3")).getText());
 		

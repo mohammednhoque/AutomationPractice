@@ -1,6 +1,8 @@
 package selenium.automationpractice;
 
 import java.io.File;
+import java.util.Scanner;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -16,14 +18,19 @@ public class TechnicalTools {
 	static WebDriver driver;
 
 	static WebDriver chooseBrowser(EBrowsers e) {
+		//did use next two line yet
+		//Scanner scanner = new Scanner(System.in);
+		//System.out.println("Browser Name");
+		//String EBrowsers  = scanner.nextLine();
+		
 		switch (e) {
 		case Chrome:
-			System.setProperty("webdriver.chrome.driver", "src/test/drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "c:/chromedriver.exe");
 			driver = new ChromeDriver();
 			System.out.println("Le navigateur choisis est Chrome");
 			return driver;
 		case Firefox:
-			System.setProperty("webdriver.chrome.driver", "src/test/drivers/geckodriver.exe");
+			System.setProperty("webdriver.chrome.driver", "c:/geckodriver.exe");
 			driver = new FirefoxDriver();
 			System.out.println("Le navigateur choisis est Firefox");
 			return driver;
